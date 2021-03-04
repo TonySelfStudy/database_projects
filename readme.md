@@ -16,7 +16,7 @@ See `*** License Info ***` for more information.
 ## Contact
 
 Tony Held - tony.held@gmail.com  
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/TonySelfStudy/database_projects](https://github.com/TonySelfStudy/database_projects)
 
 ## Resources & Acknowledgements
 
