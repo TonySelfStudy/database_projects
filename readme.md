@@ -1,11 +1,12 @@
 ## Repository Summary
-*Database and Data/Object Persistence Projects*  
+*Database and Data/Object Persistence Projects.*  
 
 ## Project Description
 
 Various tutorials and example projects to explore 
 persistence and databasing in python including:  
-* SQLite tutorial (see Resources below).
+* SQLite walk through,
+* More to follow ...  
 
 ## License
 
