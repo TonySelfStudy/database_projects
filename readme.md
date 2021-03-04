@@ -5,7 +5,7 @@
 
 Various tutorials and example projects to explore 
 persistence and databasing in python including:  
-* SQLite CRUD tutorial.
+* SQLite tutorial (see Resources below).
 
 ## License
 
