@@ -1,9 +1,18 @@
-# Resume at 4. Working with Image and Blob Data
+"""My SQLite walk-through and scratch codes on SQLite databasing
+# based on the book 'Python and SQLite Development"""
 
 import sqlite3
 import datetime
 from prettytable import PrettyTable
 import pandas as pd
+
+
+def db_connect():
+    db = 'pydb.db'
+    conn = sqlite3.connect(db)
+    print('connected')
+    print(conn)
+    conn.close()
 
 
 def open_db(file_name):
@@ -16,7 +25,6 @@ def open_db(file_name):
 
 
 def create_product_table(conn):
-
     cursor = conn.cursor()
 
     txt = '''
@@ -91,7 +99,7 @@ def update_data(conn, id, name, stock, price):
     cursor.close
     print('Done updating')
 
-def del_data(id):
+def del_data(conn, id):
     print(f'Deleting Data for {id=}')
     cursor = conn.cursor()
 
@@ -105,8 +113,8 @@ def del_data(id):
     cursor.close
     print('Done updating')
 
-
-if __name__ == '__main__':
+def crud_demo():
+    """Driver for crud_demo examples"""
     db_file_name = 'pydb.db'
     conn = open_db(db_file_name)
     create_product_table(conn)
@@ -115,11 +123,15 @@ if __name__ == '__main__':
 
     id_ = 15
     update_data(conn, id_, 'new prod id', id_+100, id_*0.1)
-    del_data(18)
+    del_data(conn, 18)
     read_data(conn)
 
     panda_party = pd.read_sql_query('select * from product', conn)
     print(panda_party)
 
-
     conn.close()
+
+
+if __name__ == '__main__':
+    db_connect()
+    crud_demo()

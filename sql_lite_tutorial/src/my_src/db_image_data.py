@@ -55,8 +55,7 @@ def extract_image(conn, id):
         with open('copy' + filename, 'wb') as fid:
             fid.write(imgfile)
 
-
-if __name__  == '__main__':
+def main():
     db_name = 'image_blob.db'
     conn1 = open_db(db_name)
 
@@ -71,3 +70,7 @@ if __name__  == '__main__':
     print('Closing connection')
     conn1.close()
     print('Done!')
+
+
+if __name__ == '__main__':
+    main()

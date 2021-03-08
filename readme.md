@@ -5,7 +5,7 @@
 
 Various tutorials and example projects to explore 
 persistence and databasing in python including:  
-* SQLite walk through,
+* SQLite walk-through,
 * More to follow ...  
 
 ## License

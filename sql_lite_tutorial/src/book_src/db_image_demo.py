@@ -88,7 +88,7 @@ conn = open_database()
 
 # reading image data demo
 print('reading image data demo')
-save_as_file = './image1-read.png'
+save_as_file = 'image1-read.png'
 id = 1
 read_image_data(conn,id,save_as_file)
 print('done')
