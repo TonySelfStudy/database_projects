@@ -1,0 +1,5 @@
+Used MySQL Workbench to set up a new connection
+
+Name: MySQLTestV01
+user: tony
+password: python
